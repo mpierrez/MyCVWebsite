@@ -1,0 +1,13 @@
+.done-container{
+    background-color: lightgreen;
+    width: 100px;
+    border-radius: 25px;
+    border: 2px solid darkgreen;
+    margin-left: 10px;
+}
+
+.done-container p{
+    text-align: center;
+    padding: 5px;
+    color: darkgreen;
+}

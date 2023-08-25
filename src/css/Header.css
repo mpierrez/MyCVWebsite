@@ -1,0 +1,43 @@
+/* Header.css */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .text-content {
+    margin-left: 20px;
+  }
+  
+  .typing-text {
+    color: #F9BA32;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 576px) {
+    .header-content {
+      flex-direction: column;
+    }
+    
+    .text-content {
+      margin-left: 0;
+      margin-top: 10px;
+      text-align: center;
+    }
+    
+    .profile-image img {
+      margin: 0 auto;
+    }
+  }
