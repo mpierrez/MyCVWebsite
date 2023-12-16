@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import htmlIcon from '../img/html.png';
 import cssIcon from '../img/css.png';
 import javascriptIcon from '../img/js.png';
@@ -11,25 +10,15 @@ import '../App.css';
 
 function Skills() {
   const skillsData = [
-    { name: 'HTML', icon: htmlIcon },
-    { name: 'CSS', icon: cssIcon },
-    { name: 'JavaScript', icon: javascriptIcon },
-    { name: 'PHP', icon: phpIcon},
-    { name: 'React', icon: reactIcon },
-    { name: 'Python', icon: pythonIcon },
-    { name: 'Java', icon: javaIcon },
-    { name: 'C#', icon: csharpIcon },
+    { id: 1, name: 'HTML', icon: htmlIcon },
+    { id: 2, name: 'CSS', icon: cssIcon },
+    { id: 3, name: 'JavaScript', icon: javascriptIcon },
+    { id: 4, name: 'PHP', icon: phpIcon},
+    { id: 5, name: 'React', icon: reactIcon },
+    { id: 6, name: 'Python', icon: pythonIcon },
+    { id: 7, name: 'Java', icon: javaIcon },
+    { id: 8, name: 'C#', icon: csharpIcon },
   ];
-
-  const [currentSkill, setCurrentSkill] = useState(0);
-
-  const handlePrevSkill = () => {
-    setCurrentSkill((prevSkill) => (prevSkill === 0 ? skillsData.length - 1 : prevSkill - 1));
-  };
-
-  const handleNextSkill = () => {
-    setCurrentSkill((prevSkill) => (prevSkill === skillsData.length - 1 ? 0 : prevSkill + 1));
-  };
 
   return (
     <section className="skills">
@@ -39,7 +28,7 @@ function Skills() {
         <div className="skills-content">
           <div className="skills-list">
             {skillsData.map((skill) => (
-              <div className="skills-item">
+              <div className="skills-item" key={skill.id}>
                 <img src={skill.icon} alt={skill.name}></img>
                 <p>{skill.name}</p>
               </div>

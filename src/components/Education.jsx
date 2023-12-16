@@ -1,4 +1,3 @@
-import React from 'react';
 import Done from './Done';
 import Progress from './Progress';
 import '../App.css';
@@ -14,7 +13,7 @@ function Education() {
             <Progress/>
           </div>
           <p>IUT Robert Schumann, depuis septembre 2021</p>
-          <p>1ère année et 2ème années validées, diplôme en cours d'acquisition</p>
+          <p>1ère année et 2ème années validées, diplôme en cours d&apos;acquisition</p>
         </div>
         <div className="education-item">
           <div className='status'>
@@ -23,7 +22,7 @@ function Education() {
           </div>
           <p>Lycée André Maurois, 2021</p>
           <p>Passé avec les spécialités Mathématiques et Physique-Chimie</p>
-          <p>Obtention avec mention "Bien"</p>
+          <p>Obtention avec mention &quot;Bien&quot;</p>
         </div>
         <div className="education-item">
           <div className='status'>
@@ -31,7 +30,7 @@ function Education() {
             <Done/>
           </div>
           <p>Collège André Maurois, 2018</p>
-          <p>Obtention avec mention "Très bien"</p>
+          <p>Obtention avec mention &quot;Très bien&quot;</p>
         </div>
       </div>
     </section>
