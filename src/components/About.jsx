@@ -5,7 +5,10 @@ function About() {
     <section className="about">
       <div className="container">
         <h2>A propos de moi</h2>
-        <p>Je suis un développeur web passionné axé sur la création d&apos;expériences utilisateur modernes et captivantes. Fort de plusieurs années d&apos;expérience dans le développement côté client et dans la programation orientée objet, je me spécialise dans la création de sites web réactifs et interactifs en utilisant les technologies les plus récentes. Mon objectif est de donner vie à des projets en ligne qui allient esthétique et fonctionnalité pour offrir aux utilisateurs une expérience exceptionnelle.</p>
+        <p>Je m&apos;appelle Mathys PIERREZ et je suis un étudiant en développement informatique à l&apos;IUT Robert Schuman de Illkirch-Graffenstaden. J&apos;ai toujours été passionné par l&apos;informatique, depuis que j&apos;étais enfant. Je me souviens que je passais des heures à jouer avec mon ordinateur, à essayer de comprendre comment il fonctionnait.</p>
+        <p>Au fur et à mesure que j&apos;ai grandi, mon intérêt pour l&apos;informatique a grandi avec moi. J&apos;ai commencé à apprendre à programmer, et j&apos;ai rapidement découvert que j&apos;avais un don pour cela. J&apos;aimais le défi de créer quelque chose de nouveau, de voir mes idées prendre vie.</p>
+        <p>Je suis un étudiant studieux et je m&apos;investis pleinement dans mes études. Je suis toujours à la recherche de nouvelles connaissances et de nouvelles compétences. Grâce à mes expériences, j&apos;ai pu participer à des beaucoup de projets étudiants et de projets professionels.</p>
+        <p>Je suis impatient de poursuivre mes études et de développer mes compétences en développement informatique. Je rêve de travailler dans une entreprise innovante où je pourrais utiliser mes compétences pour créer des choses qui ont un impact positif sur le monde.</p>
       </div>
     </section>
   );
