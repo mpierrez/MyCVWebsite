@@ -12,7 +12,7 @@ function Education() {
             <h3>BUT Informatique</h3>
             <Progress/>
           </div>
-          <p>IUT Robert Schumann, depuis septembre 2021</p>
+          <p>IUT Robert Schuman, depuis septembre 2021</p>
           <p>1ère année et 2ème années validées, diplôme en cours d&apos;acquisition</p>
         </div>
         <div className="education-item">
