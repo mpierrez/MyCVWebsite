@@ -28,10 +28,6 @@ header {
   margin-right: 10px;
 }
 
-p {
-  color: #555555;
-}
-
 section {
   padding: 10px 0;
 }
@@ -67,10 +63,6 @@ h2 {
   margin-bottom: 10px;
 }
 
-.timeline-item p {
-  margin-bottom: 5px;
-}
-
 .timeline-item .date {
   font-style: italic;
   color: #888;
@@ -93,13 +85,9 @@ form {
   text-align: center;
 }
 
-.footer p {
-  margin: 0;
-}
-
 .about {
   background-color: #f8f8f8;
-  padding: 60px 0;
+  padding: 30px 0;
   text-align: center;
 }
 
@@ -120,12 +108,11 @@ form {
   line-height: 1.5;
   color: #555555;
   max-width: 600px;
-  margin-bottom: 10px;
 }
 
 .contact {
-  background-color: #ffffff;
-  padding: 60px 0;
+  background-color: #f8f8f8;
+  padding: 30px 0;
   text-align: center;
 }
 
@@ -135,12 +122,23 @@ form {
   margin-bottom: 20px;
 }
 
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #555555;
+}
+
 .contact p {
   font-size: 18px;
   line-height: 1.5;
   color: #555555;
   max-width: 600px;
-  margin: 0 auto;
 }
 
 .contact a {
@@ -153,8 +151,7 @@ form {
 }
 
 .education {
-  background-color: #f8f8f8;
-  padding: 60px 0;
+  padding: 30px 0;
   text-align: center;
 }
 
@@ -177,12 +174,11 @@ form {
 .education-item p {
   font-size: 16px;
   color: #555555;
-  margin: 0;
 }
 
 .experience {
-  background-color: #ffffff;
-  padding: 60px 0;
+  background-color: #f8f8f8;
+  padding: 30px 0;
   text-align: center;
 }
 
@@ -205,7 +201,6 @@ form {
 .experience-item p {
   font-size: 16px;
   color: #555555;
-  margin: 0;
 }
 
 .experience-item ul {
@@ -215,7 +210,7 @@ form {
 }
 
 .experience-item li {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .footer {
@@ -227,7 +222,6 @@ form {
 .footer p {
   font-size: 14px;
   color: #555555;
-  margin: 0;
 }
 
 .social-icons {
@@ -243,9 +237,12 @@ form {
 }
 
 .skills {
-  background-color: #f8f8f8;
-  padding: 60px 0;
+  padding: 30px 0;
   text-align: center;
+}
+
+.skills p {
+  margin-bottom: 30px;
 }
 
 .skills h2 {
@@ -254,25 +251,23 @@ form {
   margin-bottom: 20px;
 }
 
-.skills-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-}
-
-.skills-list {
+.skills-list, .frameworks-list {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: baseline;
   width: 100%;
-  height: 150px;
   margin-bottom: 40px;
 }
 
-.skills-item img{
-  width: 50px;
-  height: 50px;
+.skills-item {
+  width: 100%;
+  flex: 25%
+}
+
+.skills-item p, .framework-item p {
+  margin-top: 15px;
+  padding: 0;
 }
 
 .active {
@@ -287,11 +282,17 @@ form {
 }
 
 @media (max-width: 500px) {
-  .skills-list {
+  p, h2, h3, li {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .skills-list, .frameworks-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: baseline;
     width: 100%;
     margin-bottom: 40px;
   }
@@ -323,7 +324,6 @@ form {
     line-height: 1.5;
     color: #555555;
     max-width: 600px;
-    margin-bottom: 10px;
   }
   
   .contact h2 {
@@ -337,53 +337,42 @@ form {
     line-height: 1.5;
     color: #555555;
     max-width: 600px;
-    margin: 0 auto;
   }
   
   .education h2 {
     font-size: 27px;
     font-weight: 600;
-    margin-bottom: 20px;
   }
   
   .education-item h3 {
     font-size: 19px;
     font-weight: 600;
-    margin-bottom: 10px;
   }
   
   .education-item p {
     font-size: 14px;
     color: #555555;
-    margin: 0;
+    margin: 5px 5px 5px 5px;
   }
   
   .experience h2 {
     font-size: 27px;
     font-weight: 600;
-    margin-bottom: 20px;
   }
   
   .experience-item h3 {
     font-size: 19px;
     font-weight: 600;
-    margin-bottom: 10px;
   }
   
   .experience-item p {
     font-size: 11px;
     color: black;
-    margin-bottom: 10px;
-  }
-
-  .experience-item div p {
-    margin: 0;
   }
   
   .footer p {
     font-size: 9px;
     color: #555555;
-    margin: 0;
   }
   
   .skills h2 {
@@ -397,7 +386,8 @@ form {
     color: #555555;
   }
 
-  .skills-item {
+  .skills-item, .framework-item {
+    flex: 25%;
     margin: 10px;
   }
 }

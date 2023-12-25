@@ -1,12 +1,18 @@
 .done-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: lightgreen;
     border-radius: 25px;
+    margin: 20px;
     border: 2px solid darkgreen;
-    margin-left: 10px;
+    height: 35px;
+    width: 60px;
 }
 
 .done-container p{
     text-align: center;
     padding: 5px;
     color: darkgreen;
+    margin: 0;
 }

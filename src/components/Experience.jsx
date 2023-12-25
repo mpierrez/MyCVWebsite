@@ -37,7 +37,7 @@ function Experience() {
           <p>E.LECLERC, avril 2022 à septembre 2023</p>
           <ul>
             <li>Manipulation du logiciel de caisse afin d&apos;encaisser, d&apos;ajouter des réductions et d&apos;annuler de potentielles erreurs</li>
-            <li>Amélioration de la relation client</li>
+            <li>Contribution à une bonne relation client</li>
           </ul>
         </div>
       </div>
