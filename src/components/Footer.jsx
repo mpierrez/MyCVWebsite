@@ -1,10 +1,11 @@
 import '../App.css';
 
 function Footer() {
+  let date = new Date()
   return (
     <footer className="footer">
       <div className="container">
-        <p>&copy; 2023 Mathys PIERREZ. Tous droits réservés.</p>
+        <p>&copy; {date.getFullYear()} Mathys PIERREZ. Tous droits réservés.</p>
       </div>
     </footer>
   );
